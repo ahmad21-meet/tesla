@@ -1,0 +1,583 @@
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamBook.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamBookItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamLightItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamMedium_1.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamMediumItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Gotham"),
+    url("https://fonts.cdnfonts.com/s/14898/GothamBoldItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Gotham Black";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gotham Black"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Light";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gotham Light"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Thin";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gotham Thin"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham XLight";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gotham XLight"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-XLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gotham Book";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Gotham Book"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-BookItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Gotham Thin";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Gotham Thin"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-ThinItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Gotham Ultra";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Gotham Ultra"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-UltraItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Gotham XLight";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Gotham XLight"),
+    url("https://fonts.cdnfonts.com/s/14898/Gotham-XLightItalic.woff")
+      format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: rgb(243, 240, 235);
+  font-family: "Gotham", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+body {
+  overflow: hidden;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.big-container {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.home-page {
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/5a7b3001-249f-4065-a330-4ea6a17ccf7b/bvlatuR/std/2560x1708/Model-3-Main-Hero-Desktop-LHD")
+    no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.leftside-part {
+  position: fixed;
+  top: 25%;
+  z-index: 1;
+}
+.leftside-part ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.leftside-part ul li {
+  padding: 5px;
+  margin: 5px;
+  border-left: 2px rgb(179, 173, 173) solid;
+  position: relative;
+  opacity: 0.5;
+}
+
+.leftside-part ul li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.leftside-part ul li a {
+  color: white;
+  padding-left: 10px;
+  font-size: 10px;
+  font-weight: normal;
+  cursor: default;
+  position: relative;
+}
+
+.leftside-part ul li a::before {
+  content: "";
+  padding-left: 10px;
+  font-weight: normal;
+  cursor: default;
+}
+
+.leftside-part ul li a:hover::before {
+  content: attr(data-after-content);
+}
+/* .safety-right .toup-button a {
+  display: block;
+  text-decoration: none;
+  font-size: 100px;
+  width: 100px;
+  height: 50px;
+} */
+.nav-bar {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 90px auto;
+  grid-template-areas: "logo logo center-part center-part center-part center-part center-part center-part right-part";
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.center-part {
+  grid-area: center-part;
+  justify-content: space-around;
+  margin-right: 13%;
+}
+
+.right-part {
+  grid-area: right-part;
+}
+
+.logo img {
+  width: 130px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  /* margin: 20px; */
+}
+
+.center-part li,
+.right-part li {
+  width: 100%;
+  height: 100%;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.center-part li:hover,
+.right-part li:hover {
+  background-color: rgb(73, 72, 72);
+  border-radius: 10px;
+}
+
+.center-part ul li a,
+.right-part ul li a {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+.title-home-page {
+  display: flex;
+  margin-top: 1.5%;
+  height: 18vh;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.left-buttom-side h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: rgb(53, 51, 51);
+  max-width: 200px;
+}
+.order-now,
+.order-now2 {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px white solid;
+  border-radius: 7px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: auto 300px;
+  height: auto;
+  padding: 10% 60%;
+  margin-left: 10px;
+}
+
+.order-now2 {
+  border-color: rgb(46, 44, 44);
+  color: rgb(49, 48, 48);
+  padding: 3% 100px;
+  width: auto auto;
+}
+.speedometer-img {
+  margin-right: 5px;
+}
+
+/* .font-bottom-firstpage {
+  font-size: 40px;
+  font-weight: normal;
+} */
+.top-side {
+  position: relative;
+}
+.bottom-firstpage,
+.first-to-nextpage,
+.bottom-thirdpage {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 92vh;
+  left: 22%;
+  transform: translateY(-100%);
+  width: 55%;
+}
+
+.bottom-thirdpage {
+  top: 65vh;
+  width: 50%;
+}
+
+.home-page .first-to-nextpage {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 28px;
+  padding: 1em;
+  text-align: center;
+}
+.speedometer-img {
+  width: 50px;
+  height: 30px;
+}
+.small-text {
+  flex: 1 0 auto;
+  font-size: 13px;
+}
+
+.one-line {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 7%;
+}
+.back-to-first-page {
+  position: absolute;
+  top: 2%;
+  left: 90%;
+}
+.safety-right .back-to-first-page a,
+.third-page .third-page-container .top-side .back-to-first-page a {
+  position: absolute;
+  color: rgb(141, 137, 137);
+  top: 2%;
+  left: 95%;
+  display: block;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: lighter;
+  width: 100px;
+  height: 50px;
+}
+.third-page .third-page-container .top-side .back-to-first-page a {
+  color: white;
+}
+
+.first-to-nextpage {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: lighter;
+  top: 98vh;
+  animation: move-page 0.5s linear 2s infinite alternate;
+}
+@keyframes move-page {
+  0% {
+    top: 98vh;
+  }
+
+  50% {
+    top: 99vh;
+  }
+}
+.second-page {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.second-page-container {
+  display: flex;
+  width: 97vw;
+  height: 95vh;
+}
+.safety-left {
+  flex: 1 1 80%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop")
+    50% / cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.safety-labels {
+  color: rgb(97, 93, 93);
+  font-size: 13px;
+  margin: 10px;
+  font-weight: bold;
+}
+.impact-protection {
+  position: absolute;
+  top: 15%;
+  left: 30.5%;
+  border-left: 3px black solid;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  height: 250px;
+  width: 250px;
+}
+.Rigid-structure {
+  position: absolute;
+  top: 14%;
+  left: 50.5%;
+  border-left: 3px black solid;
+  height: 130px;
+}
+
+.very-Lo-Rollover-Risk {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 58%;
+  left: 53%;
+  border-left: 3px black solid;
+  height: 130px;
+}
+
+.safety-right {
+  position: relative;
+  flex: 1 1 20%;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+}
+.safety-right h2 {
+  color: rgb(53, 51, 51);
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+.safety-right h4 {
+  color: rgb(53, 51, 51);
+  font-size: 14px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+h3 {
+  color: black;
+  font-size: 16px;
+  margin-top: 50px;
+  font-weight: lighter;
+}
+.safety-right a,
+.safety-right p {
+  color: rgb(88, 80, 80);
+  font-size: 16px;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+.safety-right p {
+  text-decoration: none;
+}
+
+.btns-second-page,
+.btns-third-page {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.btns-third-page {
+  margin-top: 1%;
+}
+.btns-third-page a {
+  color: rgb(82, 78, 78);
+  font-weight: bold;
+  margin-left: 10px;
+}
+.icon-and-text {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btns-second-page a {
+  color: rgb(80, 77, 77);
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.plus-img {
+  width: 40px;
+}
+
+.third-page {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top-side {
+  height: 67vh;
+  width: 100%;
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/1a5ba4b1-efd8-40bc-8b6d-e81bf8223e37/bvlatuR/std/2560x1440/Model-3-Performance-Hero-Desktop-LHD");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+.bottom-firstpage {
+  display: flex;
+}
+.btn-bar-title {
+  margin-top: 0;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.buttom-side {
+  display: flex;
+}
+.right-buttom-side p {
+  font-size: 16px;
+  font-weight: lighter;
+  width: 100%;
+  height: 100%;
+  color: rgb(82, 80, 80);
+  margin: 0.8%;
+  padding: 5% 10%;
+}
+
+.right-buttom-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 60%;
+}
+
+.left-buttom-side {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+  flex: 1 1 40%;
+  padding: 2%;
+}
